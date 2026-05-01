@@ -44,10 +44,8 @@ nav {
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   max-width: none;
-  min-width: 100vw;
-  min-height: 100vh;
+  height: 82vh;
   width: auto;
-  height: auto;
   pointer-events: none; z-index: 1;
 }
 .home-inner {
@@ -115,20 +113,20 @@ nav {
 }
 .why-left h2 {
   font-family: 'Bagel Fat One', sans-serif;
-  font-size: clamp(72px, 11vw, 160px);
+  font-size: clamp(120px, 18vw, 260px);
   line-height: .88;
 }
 .why-left h2 .green { color: #3F7A1F; }
 .why-left h2 .orange { color: #D8531A; }
 .why-note {
   font-family: 'Caveat', cursive;
-  font-size: clamp(26px, 3vw, 44px);
-  color: #7B6BD4; margin-top: 14px;
+  font-size: clamp(44px, 5.5vw, 80px);
+  color: #7B6BD4; margin-top: 16px;
 }
 .why-right p {
   font-family: 'IBM Plex Mono', monospace;
   font-style: normal; font-weight: 500;
-  font-size: clamp(17px, 2.2vw, 32px);
+  font-size: clamp(28px, 3.5vw, 52px);
   line-height: 1.55; color: #3F7A1F;
   margin-bottom: 1.4em;
 }
@@ -147,34 +145,34 @@ nav {
 .ingr-inner { position: relative; z-index: 2; max-width: 1400px; margin: 0 auto; }
 .ingr-title {
   font-family: 'Bagel Fat One', sans-serif;
-  font-size: clamp(64px, 9vw, 140px);
+  font-size: clamp(100px, 16vw, 240px);
   color: #F0F9B8; line-height: .88;
-  margin-bottom: clamp(40px, 5vw, 80px);
+  margin-bottom: clamp(48px, 6vw, 96px);
 }
 .ingr-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
   background: transparent;
 }
 .ingr-card {
   background: #F0F9B8;
   border: 1px solid rgba(240,249,184,.14);
-  display: flex; align-items: center; gap: 20px;
-  padding: 24px;
-  min-height: 150px;
+  display: flex; align-items: center; gap: 24px;
+  padding: 32px;
+  min-height: 200px;
 }
 .ingr-card img {
-  width: clamp(80px, 8vw, 130px);
-  height: clamp(80px, 8vw, 130px);
+  width: clamp(100px, 10vw, 160px);
+  height: clamp(100px, 10vw, 160px);
   object-fit: contain; flex-shrink: 0;
 }
 .ingr-card h3 {
   font-family: 'Bagel Fat One', sans-serif;
-  font-size: clamp(18px, 1.8vw, 28px);
-  color: #7B6BD4; margin-bottom: 6px; line-height: 1.1;
+  font-size: clamp(28px, 3vw, 48px);
+  color: #7B6BD4; margin-bottom: 8px; line-height: 1.1;
 }
 .ingr-card p {
   font-family: 'Fraunces', serif;
-  font-style: italic; font-size: clamp(13px, 1.2vw, 18px);
+  font-style: italic; font-size: clamp(18px, 2vw, 28px);
   line-height: 1.5; color: #3F7A1F; opacity: .75;
 }
  
@@ -196,26 +194,31 @@ nav {
 }
 .findus-title {
   font-family: 'Bagel Fat One', sans-serif;
-  font-size: clamp(110px, 17vw, 260px);
+  font-size: clamp(160px, 24vw, 380px);
   color: #F0F9B8; line-height: .82;
 }
 .findus-note {
   font-family: 'Caveat', cursive;
-  font-size: clamp(28px, 3.2vw, 48px);
-  color: #A8C77A; margin-top: 12px;
+  font-size: clamp(44px, 5.5vw, 80px);
+  color: #A8C77A; margin-top: 16px;
 }
 .findus-text {
   font-family: 'Fraunces', serif; font-style: italic;
-  font-size: clamp(18px, 1.8vw, 26px);
+  font-size: clamp(28px, 3.2vw, 48px);
   line-height: 1.6; color: #F5EBC8;
-  margin-top: 20px; margin-bottom: 36px;
+  margin-top: 24px; margin-bottom: 44px;
+}
+.findus-inner {
+  position: relative; z-index: 2;
+  max-width: 900px; margin: 0 auto;
+  display: flex; flex-direction: column; align-items: center;
 }
 .findus-btn {
   display: inline-flex; align-items: center; justify-content: center;
-  padding: 20px 48px; border-radius: 100px;
+  padding: 24px 56px; border-radius: 100px;
   border: 3px solid #F0F9B8; background: #3F7A1F;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: clamp(12px, 1.1vw, 16px);
+  font-size: clamp(16px, 1.6vw, 22px);
   letter-spacing: 2.4px; text-transform: uppercase; color: #F0F9B8;
   transition: background .2s, color .2s;
 }
