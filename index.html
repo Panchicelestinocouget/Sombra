@@ -59,26 +59,27 @@ nav {
   margin-bottom: clamp(16px, 3vw, 48px);
 }
 .home-frame-wrap {
-  position: relative; width: 100%; max-width: 900px;
+  position: relative; width: 100%; max-width: 1100px;
   display: flex; align-items: center; justify-content: center;
+  padding: 80px 0;
 }
 .home-frame-wrap .sun-img {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 140%; height: auto;
+  width: 100%; height: auto;
   object-fit: contain; pointer-events: none;
 }
 .home-title {
   font-family: 'Bagel Fat One', sans-serif;
-  font-size: clamp(72px, 13vw, 240px);
+  font-size: clamp(90px, 14vw, 260px);
   color: #F0F9B8; line-height: 1;
   position: relative; z-index: 2;
 }
 .home-sub {
   font-family: 'Caveat', cursive;
-  font-size: clamp(18px, 2vw, 30px);
-  color: #F0F9B8; margin-top: clamp(10px, 2vw, 24px);
+  font-size: clamp(22px, 2.5vw, 38px);
+  color: #F0F9B8; margin-top: clamp(14px, 2vw, 28px);
 }
  
 /* ── TICKER ── */
@@ -123,20 +124,20 @@ nav {
 }
 .why-left h2 {
   font-family: 'Bagel Fat One', sans-serif;
-  font-size: clamp(52px, 7.5vw, 110px);
+  font-size: clamp(64px, 9vw, 130px);
   line-height: .88;
 }
 .why-left h2 .green { color: #3F7A1F; }
 .why-left h2 .orange { color: #D8531A; }
 .why-note {
   font-family: 'Caveat', cursive;
-  font-size: clamp(20px, 2vw, 30px);
+  font-size: clamp(22px, 2.4vw, 36px);
   color: #7B6BD4; margin-top: 10px;
 }
 .why-right p {
   font-family: 'IBM Plex Mono', monospace;
   font-style: normal; font-weight: 500;
-  font-size: clamp(13px, 1.6vw, 28px);
+  font-size: clamp(15px, 1.8vw, 28px);
   line-height: 1.45; color: #3F7A1F;
   margin-bottom: 1.3em;
 }
@@ -155,9 +156,9 @@ nav {
 .ingr-inner { position: relative; z-index: 2; max-width: 1400px; margin: 0 auto; }
 .ingr-title {
   font-family: 'Bagel Fat One', sans-serif;
-  font-size: clamp(36px, 6vw, 90px);
+  font-size: clamp(52px, 7.5vw, 110px);
   color: #F0F9B8; line-height: .88;
-  margin-bottom: clamp(28px, 4vw, 56px);
+  margin-bottom: clamp(32px, 4vw, 64px);
 }
 .ingr-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
@@ -171,18 +172,18 @@ nav {
   min-height: 110px;
 }
 .ingr-card img {
-  width: clamp(60px, 6vw, 95px);
-  height: clamp(60px, 6vw, 95px);
+  width: clamp(72px, 7vw, 110px);
+  height: clamp(72px, 7vw, 110px);
   object-fit: contain; flex-shrink: 0;
 }
 .ingr-card h3 {
   font-family: 'Bagel Fat One', sans-serif;
-  font-size: clamp(13px, 1.1vw, 20px);
+  font-size: clamp(16px, 1.4vw, 24px);
   color: #7B6BD4; margin-bottom: 5px; line-height: 1.1;
 }
 .ingr-card p {
   font-family: 'Fraunces', serif;
-  font-style: italic; font-size: clamp(10px, .85vw, 14px);
+  font-style: italic; font-size: clamp(12px, 1vw, 16px);
   line-height: 1.5; color: #3F7A1F; opacity: .75;
 }
  
@@ -204,26 +205,26 @@ nav {
 }
 .findus-title {
   font-family: 'Bagel Fat One', sans-serif;
-  font-size: clamp(80px, 13vw, 180px);
+  font-size: clamp(100px, 15vw, 220px);
   color: #F0F9B8; line-height: .82;
 }
 .findus-note {
   font-family: 'Caveat', cursive;
-  font-size: clamp(20px, 2.2vw, 34px);
+  font-size: clamp(24px, 2.6vw, 40px);
   color: #A8C77A; margin-top: 8px;
 }
 .findus-text {
   font-family: 'Fraunces', serif; font-style: italic;
-  font-size: clamp(14px, 1.3vw, 20px);
+  font-size: clamp(16px, 1.5vw, 22px);
   line-height: 1.6; color: #F5EBC8;
   margin-top: 16px; margin-bottom: 28px;
 }
 .findus-btn {
   display: inline-flex; align-items: center; justify-content: center;
-  padding: 17px 35px; border-radius: 100px;
+  padding: 18px 40px; border-radius: 100px;
   border: 3px solid #F0F9B8; background: #3F7A1F;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: clamp(10px, .8vw, 12px);
+  font-size: clamp(11px, 1vw, 14px);
   letter-spacing: 2.4px; text-transform: uppercase; color: #F0F9B8;
   transition: background .2s, color .2s;
 }
