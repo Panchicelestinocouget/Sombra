@@ -35,17 +35,17 @@ nav {
 /* ── HOME ── */
 #home {
   background: #3F7A1F;
-  min-height: 100vh;
+  height: 100vh;
   display: flex; align-items: center; justify-content: center;
   position: relative; overflow: hidden;
-  padding: 90px 40px 40px;
 }
-.home-bg-sombra {
+.sun-img {
   position: absolute;
-  font-family: 'Bagel Fat One', sans-serif;
-  font-size: clamp(120px, 20vw, 380px);
-  color: #F0F9B8; opacity: .04;
-  white-space: nowrap; pointer-events: none; user-select: none;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; height: 100%;
+  object-fit: contain;
+  pointer-events: none; z-index: 1;
 }
 .home-inner {
   position: relative; z-index: 2;
@@ -54,31 +54,19 @@ nav {
 }
 .home-badge {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: clamp(10px, 1.3vw, 24px);
-  letter-spacing: 1.08px; color: #F0F9B8; opacity: .6;
-  margin-bottom: clamp(16px, 3vw, 48px);
-}
-.home-frame-wrap {
-  position: relative; width: 100%; max-width: 1100px;
-  display: flex; align-items: center; justify-content: center;
-  padding: 80px 0;
-}
-.home-frame-wrap .sun-img {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%; height: auto;
-  object-fit: contain; pointer-events: none;
+  font-size: clamp(11px, 1.1vw, 18px);
+  letter-spacing: 1.5px; color: #F0F9B8; opacity: .8;
+  margin-bottom: clamp(16px, 2.5vw, 40px);
 }
 .home-title {
   font-family: 'Bagel Fat One', sans-serif;
-  font-size: clamp(90px, 14vw, 260px);
+  font-size: clamp(100px, 16vw, 300px);
   color: #F0F9B8; line-height: 1;
   position: relative; z-index: 2;
 }
 .home-sub {
   font-family: 'Caveat', cursive;
-  font-size: clamp(22px, 2.5vw, 38px);
+  font-size: clamp(22px, 2.5vw, 40px);
   color: #F0F9B8; margin-top: clamp(14px, 2vw, 28px);
 }
  
@@ -283,13 +271,10 @@ footer {
  
 <!-- HOME -->
 <section id="home">
-  <div class="home-bg-sombra">SOMBRA</div>
+  <img class="sun-img" src="Untitled_Artwork_9_2.png" alt="">
   <div class="home-inner">
     <div class="home-badge">HANDMADE · NON-NANO ZINC · NATURAL INGREDIENTS</div>
-    <div class="home-frame-wrap">
-      <img class="sun-img" src="Untitled_Artwork_9_2.png" alt="">
-      <div class="home-title">SOMBRA</div>
-    </div>
+    <div class="home-title">SOMBRA</div>
     <div class="home-sub">OCEAN FRIENDLY SUNSCREEN</div>
   </div>
 </section>
